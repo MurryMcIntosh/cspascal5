@@ -1,0 +1,17 @@
+PROGRAM wc;
+USES CopyUnit;
+
+VAR
+  nc, nl : INTEGER;
+  c : CHARACTER;
+BEGIN
+  nc := 0;
+  nl := 0;
+  WHILE(getc(c) <> ENDFILE) DO
+  BEGIN
+    nc := nc + 1;
+    IF c = NEWLINE THEN nl := nl + 1;
+  END;
+  Writeln('Number of characters: ', nc);
+  Writeln('Number of lines:      ', nl);
+END.
