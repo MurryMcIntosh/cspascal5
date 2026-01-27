@@ -1,5 +1,7 @@
 UNIT murry;
 
+{ Murry's pascal library }
+
 INTERFACE
 USES csp;
 
